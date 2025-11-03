@@ -1,4 +1,5 @@
 # CSE 134B : Discussion 6
+https://cse134b-di6.pages.dev/
 
 For Astro to run on your system, you will also need to have a compatible version of Node.js installed. 
 For whatever reason Astro only supports even-numbered Node.js versions, so verify this with node -v.
@@ -36,3 +37,8 @@ Project root
 │     └─ global.css
 ```
 For full credit, you are expected to go a bit beyond what has already been presented in the discussion.
+
+https://docs.astro.build/en/guides/deploy/cloudflare/ gives excellent advice on getting your page deployed. Below are the exact sequence of steps to deploy your project using Cloudflare's online interface, but there should be no difference if you choose to use Wrangler CLI instead.
+
+![Cloudflare Deployment Steps](cloudflare_steps.png)
+
