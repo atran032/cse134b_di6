@@ -1,6 +1,50 @@
 ---
 import Medallion from "./components/Medallion.astro";
 import Navigation from "./components/Navigation.astro";
+import { Image } from "astro:assets";
+
+// Import all gallery images
+import casaDelPrado from "../";
+import casaDelPradoSmall from "../casa_del_prado_small.jpg";
+
+import californiaTower from "../california_tower.jpg";
+import californiaTowerSmall from "../california_tower_small.jpg";
+
+import midway from "../midway.jpg";
+import midwaySmall from "../midway_small.jpg";
+
+import starOfIndia from "../star_of_india.jpg";
+import starOfIndiaSmall from "../star_of_india_small.jpg";
+
+import highRises from "../high_rises.jpg";
+import highRisesSmall from "../high_rises_small.jpg";
+
+import downtownDusk from "../downtown_dusk.jpg";
+import downtownDuskSmall from "../downtown_dusk_small.jpg";
+
+import sunsetPier from "../sunset_pier.jpg";
+import sunsetPierSmall from "../sunset_pier_small.jpg";
+
+import cranes from "./cranes.jpg";
+import cranesSmall from "./cranes_small.jpg";
+
+import bikeLaneNight from "../bike_lane_night.jpg";
+import bikeLaneNightSmall from "../bike_lane_night_small.jpg";
+
+import cityHallNight from "../city_hall_night.jpg";
+import cityHallNightSmall from "../city_hall_night_small.jpg";
+
+import nightIntersection from "../night_intersection.jpg";
+import nightIntersectionSmall from "../night_intersection_small.jpg";
+
+import station from "../station.jpg";
+import stationSmall from "../station_small.jpg";
+
+import scripps from "../scripps.jpg";
+import scrippsSmall from "../scripps_small.jpg";
+
+import mexicanFood from "../mexican_food.jpg";
+import mexicanFoodSmall from "../mexican_food_small.jpg";
 ---
 
 <html lang="en">
@@ -9,85 +53,87 @@ import Navigation from "./components/Navigation.astro";
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
-  <title>Portfolio Career</title>
+  <title>Gallery</title>
 </head>
 
 <body>
   <Navigation/>
+
   <main>
     <section>
-    <h1>Gallery</h1>
-    <p>I love <strong>San Diego</strong> and do enjoy a bit of amateur photography. Enjoy a selection of diverse scenes!</p>
+      <h1>Gallery</h1>
+      <p>I love <strong>San Diego</strong> and do enjoy a bit of amateur photography. Enjoy a selection of diverse scenes!</p>
 
-    <picture>
-        <source srcset="/casa_del_prado.jpg" media="(min-width: 600px)">
-        <img src="/casa_del_prado_small.jpg" alt="Casa Del Prado" height="400">
-    </picture>
+      <!-- Example pattern for Astro images inside <picture> -->
+      <picture>
+        <source srcset={casaDelPrado.src} media="(min-width: 600px)" />
+        <Image src={casaDelPradoSmall} alt="Casa Del Prado" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/california_tower.jpg" media="(min-width: 600px)">
-        <img src="/california_tower_small.jpg" alt="California Tower" height="400">
-    </picture>
+      <picture>
+        <source srcset={californiaTower.src} media="(min-width: 600px)" />
+        <Image src={californiaTowerSmall} alt="California Tower" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/midway.jpg" media="(min-width: 600px)">
-        <img src="/midway_small.jpg" alt="USS Midway" height="400">
-    </picture>
+      <picture>
+        <source srcset={midway.src} media="(min-width: 600px)" />
+        <Image src={midwaySmall} alt="USS Midway" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/star_of_india.jpg" media="(min-width: 600px)">
-        <img src="/star_of_india_small.jpg" alt="Masts of the Star of India" height="400">
-    </picture>
+      <picture>
+        <source srcset={starOfIndia.src} media="(min-width: 600px)" />
+        <Image src={starOfIndiaSmall} alt="Masts of the Star of India" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/high_rises.jpg" media="(min-width: 600px)">
-        <img src="/high_rises_small.jpg" alt="High-rises in Downtown SD" height="400">
-    </picture>
+      <picture>
+        <source srcset={highRises.src} media="(min-width: 600px)" />
+        <Image src={highRisesSmall} alt="High-rises in Downtown SD" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/downtown_dusk.jpg" media="(min-width: 600px)">
-        <img src="/downtown_dusk_small.jpg" alt="Downtown SD at dusk" height="400">
-    </picture>
+      <picture>
+        <source srcset={downtownDusk.src} media="(min-width: 600px)" />
+        <Image src={downtownDuskSmall} alt="Downtown SD at dusk" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/sunset_pier.jpg" media="(min-width: 600px)">
-        <img src="/sunset_pier_small.jpg" alt="SD Waterfront near sunset" height="400">
-    </picture>
+      <picture>
+        <source srcset={sunsetPier.src} media="(min-width: 600px)" />
+        <Image src={sunsetPierSmall} alt="SD Waterfront near sunset" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/cranes.jpg" media="(min-width: 600px)">
-        <img src="/cranes_small.jpg" alt="Construction cranes among clouds" height="400">
-    </picture>
+      <picture>
+        <source srcset={cranes.src} media="(min-width: 600px)" />
+        <Image src={cranesSmall} alt="Construction cranes among clouds" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/bike_lane_night.jpg" media="(min-width: 600px)">
-        <img src="/bike_lane_night_small.jpg" alt="Bike lane lined with lamps" height="400">
-    </picture>
+      <picture>
+        <source srcset={bikeLaneNight.src} media="(min-width: 600px)" />
+        <Image src={bikeLaneNightSmall} alt="Bike lane lined with lamps" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/city_hall_night.jpg" media="(min-width: 600px)">
-        <img src="/city_hall_night_small.jpg" alt="SD City Hall at night" height="400">
-    </picture>
+      <picture>
+        <source srcset={cityHallNight.src} media="(min-width: 600px)" />
+        <Image src={cityHallNightSmall} alt="SD City Hall at night" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/night_intersection.jpg" media="(min-width: 600px)">
-        <img src="/night_intersection_small.jpg" alt="Intersection after a rainy night" height="400">
-    </picture>
+      <picture>
+        <source srcset={nightIntersection.src} media="(min-width: 600px)" />
+        <Image src={nightIntersectionSmall} alt="Intersection after a rainy night" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/station.jpg" media="(min-width: 600px)">
-        <img src="/station_small.jpg" alt="Train station under a bridge" height="400">
-    </picture>
+      <picture>
+        <source srcset={station.src} media="(min-width: 600px)" />
+        <Image src={stationSmall} alt="Train station under a bridge" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/scripps.jpg" media="(min-width: 600px)">
-        <img src="/scripps_small.jpg" alt="Scripps Institute of Oceanology" height="400">
-    </picture>
+      <picture>
+        <source srcset={scripps.src} media="(min-width: 600px)" />
+        <Image src={scrippsSmall} alt="Scripps Institute of Oceanology" height={400} />
+      </picture>
 
-    <picture>
-        <source srcset="/mexican_food.jpg" media="(min-width: 600px)">
-        <img src="/mexican_food_small.jpg" alt="Neon Sign for Mexican Food" height="400">
-    </picture>
+      <picture>
+        <source srcset={mexicanFood.src} media="(min-width: 600px)" />
+        <Image src={mexicanFoodSmall} alt="Neon Sign for Mexican Food" height={400} />
+      </picture>
     </section>
 
     <noscript>
@@ -100,3 +146,5 @@ import Navigation from "./components/Navigation.astro";
   <footer>
     <p>&copy; 2025 Anthony Tran</p>
   </footer>
+</body>
+</html>
