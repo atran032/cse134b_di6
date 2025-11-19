@@ -1,28 +1,46 @@
 ---
 import Navigation from "./components/Navigation.astro";
-const name = "Ethan";
-const pageTitle = "Ethan's Blog Page";
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Navigation />
-    <h1>Welcome to {name}'s page!</h1>
-    <p>
-      I am working through Astro's introductory tutorial. This is the second
-      page on my website, and it's the first one I built myself!
-    </p>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <title>Portfolio Home</title>
+</head>
 
-    <p>
-      This site will update as I complete more of the tutorial, so keep checking
-      back and see how my journey is going!
-    </p>
-  </body>
-</html>
+<body>
+  <Navigation/>
+  <main>
+    <section>
+      <hello-world></hello-world>
+      <h2>Welcome!</h2>
+      <p>Hello! I'm <strong>Anthony</strong>, a computer science undergraduate at UCSD. You'll notice that
+      this website is similar to the Portfolio I'm making. I mainly decided I would experiment with
+      recreating it again in a more minimal form using Astro elements.</p>
+    </section>
+
+    <section>
+      <h3>About Me</h3>
+      <picture>
+        <source srcset="images/me_in_tree.jpg" media="(min-width: 600px)">
+        <img src="images/me_small.png" alt="Portrait of Anthony" width="500">
+      </picture>
+      <p>My love of computers developed early, when I first got my hands on the family computer. Ever since, it took off, and I was learning rudimentary programming since the 3rd grade. I love to learn the subject <i>and</i> I love to teach it too. My fondness of computers is also related to my love of <em>video games</em>, but I dabble in many non-digital interests as well. I love to <em>hike</em>, I <em>bake</em>, I practice <em>fencing</em>, and I love to study <em>history</em>.</p>
+      <!-- Little SVG Medallion art -->
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="GoldenRod" stroke-width="4" fill="Gold" />
+        <text x="50%" y="65%" text-anchor="middle" font-size="48" fill="GoldenRod">AT</text>
+      </svg>
+    </section>
+
+    <noscript>
+      <p><strong>Note:</strong> This form may not work correctly if JavaScript is disabled.</p>
+    </noscript>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anthony Tran</p>
+  </footer>
