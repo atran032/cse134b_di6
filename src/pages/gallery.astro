@@ -1,0 +1,102 @@
+---
+import Medallion from "./components/Medallion.astro";
+import Navigation from "./components/Navigation.astro";
+---
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <title>Portfolio Career</title>
+</head>
+
+<body>
+  <Navigation/>
+  <main>
+    <section>
+    <h1>Gallery</h1>
+    <p>I love <strong>San Diego</strong> and do enjoy a bit of amateur photography. Enjoy a selection of diverse scenes!</p>
+
+    <picture>
+        <source srcset="/casa_del_prado.jpg" media="(min-width: 600px)">
+        <img src="/casa_del_prado_small.jpg" alt="Casa Del Prado" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/california_tower.jpg" media="(min-width: 600px)">
+        <img src="/california_tower_small.jpg" alt="California Tower" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/midway.jpg" media="(min-width: 600px)">
+        <img src="/midway_small.jpg" alt="USS Midway" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/star_of_india.jpg" media="(min-width: 600px)">
+        <img src="/star_of_india_small.jpg" alt="Masts of the Star of India" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/high_rises.jpg" media="(min-width: 600px)">
+        <img src="/high_rises_small.jpg" alt="High-rises in Downtown SD" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/downtown_dusk.jpg" media="(min-width: 600px)">
+        <img src="/downtown_dusk_small.jpg" alt="Downtown SD at dusk" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/sunset_pier.jpg" media="(min-width: 600px)">
+        <img src="/sunset_pier_small.jpg" alt="SD Waterfront near sunset" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/cranes.jpg" media="(min-width: 600px)">
+        <img src="/cranes_small.jpg" alt="Construction cranes among clouds" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/bike_lane_night.jpg" media="(min-width: 600px)">
+        <img src="/bike_lane_night_small.jpg" alt="Bike lane lined with lamps" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/city_hall_night.jpg" media="(min-width: 600px)">
+        <img src="/city_hall_night_small.jpg" alt="SD City Hall at night" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/night_intersection.jpg" media="(min-width: 600px)">
+        <img src="/night_intersection_small.jpg" alt="Intersection after a rainy night" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/station.jpg" media="(min-width: 600px)">
+        <img src="/station_small.jpg" alt="Train station under a bridge" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/scripps.jpg" media="(min-width: 600px)">
+        <img src="/scripps_small.jpg" alt="Scripps Institute of Oceanology" height="400">
+    </picture>
+
+    <picture>
+        <source srcset="/mexican_food.jpg" media="(min-width: 600px)">
+        <img src="/mexican_food_small.jpg" alt="Neon Sign for Mexican Food" height="400">
+    </picture>
+    </section>
+
+    <noscript>
+      <p><strong>Note:</strong> This form may not work correctly if JavaScript is disabled.</p>
+    </noscript>
+
+    <Medallion/>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anthony Tran</p>
+  </footer>

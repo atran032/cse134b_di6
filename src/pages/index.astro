@@ -1,4 +1,5 @@
 ---
+import Medallion from "./components/Medallion.astro";
 import Navigation from "./components/Navigation.astro";
 ---
 
@@ -17,9 +18,10 @@ import Navigation from "./components/Navigation.astro";
     <section>
       <hello-world></hello-world>
       <h2>Welcome!</h2>
-      <p>Hello! I'm <strong>Anthony</strong>, a computer science undergraduate at UCSD. You'll notice that
-      this website is similar to the Portfolio I'm making. I mainly decided I would experiment with
-      recreating it again in a more minimal form using Astro elements.</p>
+      <p>You'll notice that this website is similar to the Portfolio I'm making. 
+        My goal for this is to experiment with making a more minimal Portfolio 
+        using custom Astro elements. Apologies if you were expecting something
+        more like a blog.</p>
     </section>
 
     <section>
@@ -28,17 +30,19 @@ import Navigation from "./components/Navigation.astro";
         <source srcset="images/me_in_tree.jpg" media="(min-width: 600px)">
         <img src="images/me_small.png" alt="Portrait of Anthony" width="500">
       </picture>
-      <p>My love of computers developed early, when I first got my hands on the family computer. Ever since, it took off, and I was learning rudimentary programming since the 3rd grade. I love to learn the subject <i>and</i> I love to teach it too. My fondness of computers is also related to my love of <em>video games</em>, but I dabble in many non-digital interests as well. I love to <em>hike</em>, I <em>bake</em>, I practice <em>fencing</em>, and I love to study <em>history</em>.</p>
-      <!-- Little SVG Medallion art -->
-      <svg width="100" height="100">
-        <circle cx="50" cy="50" r="40" stroke="GoldenRod" stroke-width="4" fill="Gold" />
-        <text x="50%" y="65%" text-anchor="middle" font-size="48" fill="GoldenRod">AT</text>
-      </svg>
+      <p>My love of computers developed early, when I first got my hands on the family computer. 
+        Ever since, it took off, and I was learning rudimentary programming since the 3rd grade. 
+        I love to learn the subject <i>and</i> I love to teach it too. My fondness of computers 
+        is also related to my love of <em>video games</em>, but I dabble in many non-digital 
+        interests as well. I love to <em>hike</em>, I <em>bake</em>, I practice <em>fencing</em>, 
+        and I love to study <em>history</em>, particularly of the medieval eras.</p>
     </section>
 
     <noscript>
       <p><strong>Note:</strong> This form may not work correctly if JavaScript is disabled.</p>
     </noscript>
+
+    <Medallion/>
   </main>
 
   <footer>

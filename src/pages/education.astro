@@ -1,0 +1,65 @@
+---
+import Medallion from "./components/Medallion.astro";
+import Navigation from "./components/Navigation.astro";
+---
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <title>Portfolio Career</title>
+</head>
+
+<body>
+  <Navigation/>
+  <main>
+    <article>
+    <h1>Resume</h1>
+    <h2>Education</h2>
+    <ul>
+        <li><span class="degree-name">B.S. in Computer Science</span> &mdash; UC San Diego</li>
+        <li><span class="degree-name">A.S. in Math & Science</span> &mdash; Moreno Valley College</li>
+        <li>Relevant Courses:
+        <ul>
+            <li>Web Design</li>
+            <li>Computer Architecture</li>
+            <li>Cryptography</li>
+            <li>Predictive AI</li>
+        </ul>
+        </li>
+    </ul>
+    </article>
+
+    <article>
+    <h2>Skills & Experience</h2>
+    <h3>Tutoring</h3>
+    <ul>
+        <li>Elementary Computer Science</li>
+        <li>University Introductory Computer Science
+        <ul>
+            <li><strong>CSE 8A</strong>: Introduction to Programming and Computational Problem-Solving</li>
+            <li><strong>CSE 12</strong>: Basic Data Structures and Object-Oriented Design</li>
+        </ul>
+        </li>
+        <li>Relevant Skills:
+        <ul>
+            <li>Patience</li>
+            <li>Explaining complex topics in different ways</li>
+            <li>Understanding multiple points of view</li>
+        </ul>
+        </li>
+    </ul>
+    </article>
+
+    <noscript>
+      <p><strong>Note:</strong> This form may not work correctly if JavaScript is disabled.</p>
+    </noscript>
+
+    <Medallion/>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anthony Tran</p>
+  </footer>
